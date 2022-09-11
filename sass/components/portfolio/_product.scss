@@ -1,8 +1,19 @@
-.product__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .product__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
-
+  .product__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .product__content {
+    flex-grow: 1;
+  }
+}
+.product__item {
   &:hover .product__description {
     transform: translateY(0);
   }
@@ -90,6 +101,14 @@
     &:hover .product__description {
       transform: translateY(0);
     }
+  }
+  .product__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .product__content {
+    flex-grow: 1;
   }
 }
 
