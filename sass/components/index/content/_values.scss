@@ -1,0 +1,118 @@
+@media screen and (max-width: 1199px) {
+  .values {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .values {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.values__header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-color;
+}
+.values__list {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .values__list {
+    width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .values__list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .values__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .values__item {
+    min-width: 270px;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.values__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-color;
+}
+@media screen and (max-width: 767px) {
+  .values__title {
+    text-align: center;
+  }
+}
+.values__text {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: $secondary-color;
+  margin-top: 10px;
+  max-width: 450px;
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .values__text {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .values__text {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .values__text {
+    max-width: 270px;
+  }
+}
+.values__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  height: 120px;
+  background: $sand-color;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .values__icon {
+    max-width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .values__icon {
+    max-width: 270px;
+  }
+}

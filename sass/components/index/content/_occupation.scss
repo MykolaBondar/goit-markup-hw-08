@@ -1,0 +1,57 @@
+@media screen and (max-width: 1199px) {
+  .occupation {
+    display: none;
+  }
+}
+
+.occupation {
+  padding-bottom: 94px;
+}
+.occupation,
+.occupation__container {
+  margin-left: auto;
+  margin-right: auto;
+}
+.occupation__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-color;
+  margin-bottom: 50px;
+}
+
+.occupation__list {
+  display: flex;
+}
+
+.occupation__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.occupation__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+.occupation__description-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}

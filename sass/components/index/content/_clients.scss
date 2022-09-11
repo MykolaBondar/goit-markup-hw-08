@@ -1,0 +1,102 @@
+.clients,
+.clients__container {
+  padding-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+}
+.clients__title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primary-color;
+  margin-bottom: 30px;
+}
+.clients__list {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .clients__list {
+    max-width: 1170px;
+  }
+  .clients__icon-list:not(:first-child) {
+    margin-left: 30px;
+  }
+  .clients__icon-list,
+  .clients__link {
+    min-width: 170px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
+  .clients__icon-list {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+  }
+  .clients__icon-list {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+.clients__link {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $btn-color;
+    border: 1px solid $btn-color;
+    border-radius: 4px;
+  }
+}
+.clients__icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .clients__link:hover &,
+  .clients__link:focus {
+    fill: $btn-color;
+  }
+}
