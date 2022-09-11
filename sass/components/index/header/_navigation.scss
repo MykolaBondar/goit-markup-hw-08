@@ -55,13 +55,15 @@
   }
   .navigation__lists.is-open {
     display: block;
+    position: fixed;
     padding-left: 40px;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: $white-color;
-    position: absolute;
+
     top: 0;
     left: 0;
-    height: 796px;
+
     padding-top: 48px;
     z-index: 998;
   }
