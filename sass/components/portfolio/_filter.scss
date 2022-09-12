@@ -1,22 +1,28 @@
-.filter {
+.portfolio {
   padding-top: 60px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+.filter {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   margin-top: calc(-1 * 15px);
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .filter {
     justify-content: center;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
   .filter {
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 34x;
+    margin-bottom: 34px;
   }
 }
 .filter__item {
