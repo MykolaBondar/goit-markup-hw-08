@@ -1185,7 +1185,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 30px;
+}
+@media screen and (max-width: 11199px) {
+  .clients__title {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .clients__title {
