@@ -12,19 +12,16 @@
   flex-wrap: wrap;
   margin-top: calc(-1 * 15px);
   margin-bottom: 40px;
-}
-@media screen and (min-width: 769px) and (max-width: 1199px) {
-  .filter {
+  @media screen and (min-width: 769px) and (max-width: 1199px) {
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .filter {
-    justify-content: center;
-    margin-bottom: 34px;
-  }
-}
+
 .filter__item {
   &:not(:first-child) {
     margin-left: 8px;

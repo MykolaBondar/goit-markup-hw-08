@@ -86,8 +86,8 @@
       </div>
     </header>
     <main>
-      <section class="portfolio container">
-        <div class="portfolio__box">
+      <section class="portfolio">
+        <div class="portfolio__box container">
           <ul class="filter list">
             <li class="filter__item">
               <button class="filter__button" type="button">Усі</button>
@@ -111,17 +111,39 @@
             <li class="product__item">
               <a href="" class="link product__link">
                 <div class="product__wrap">
-                  <img
-                    srcset="
-                      ./images/product1.jpg    1x,
-                      ./images/product1@2x.jpg 2x
-                    "
-                    src="./images/product1.jpg"
-                    alt="Веб-сайт	&#8220;Технокряк&#8221;"
-                    width="450"
-                    height="294"
-                  />
-
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-prod1.jpg    1x,
+                        ./images/desk-prod1@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-prod1.jpg 1x,
+                        ./images/tab-prod1@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-prod1.jpg 1x,
+                        ./images/mob-prod1@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/mob-prod1.jpg"
+                      alt="Веб-сайт	&#8220;Технокряк&#8221;"
+                      width="100%"
+                    />
+                  </picture>
+                  
                   <p class="product__description no-style">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -134,19 +156,44 @@
                 </div>
               </a>
             </li>
+
             <li class="product__item">
               <a href="" class="product__link link">
                 <div class="product__wrap">
-                  <img
-                    srcset="
-                      ./images/product2.jpg    1x,
-                      ./images/product2@2x.jpg 2x
-                    "
-                    src="./images/product2.jpg"
-                    alt="Постер Новий Орлеан та Голден Стар"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-prod2.jpg    1x,
+                        ./images/desk-prod2@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-prod2.jpg 1x,
+                        ./images/tab-prod2@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-prod2.jpg 1x,
+                        ./images/mob-prod2@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/mob-prod2.jpg"
+                      alt="Постер Новий Орлеан та Голден Стар"
+                      width="100%"
+                    />
+                  </picture>
+                  
+                 
                   <p class="product__description no-style">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -164,16 +211,38 @@
             <li class="product__item">
               <a href="" class="product__link link">
                 <div class="product__wrap">
-                  <img
-                    srcset="
-                      ./images/product3.jpg    1x,
-                      ./images/product3@2x.jpg 2x
-                    "
-                    src="./images/product3.jpg"
-                    alt="Ресторан &#8220;Сіафуд&#8221;"
-                    width="450"
-                    height="294"
-                  />
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/desk-prod3.jpg    1x,
+                        ./images/desk-prod3@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-prod3.jpg 1x,
+                        ./images/tab-prod3@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-prod3.jpg 1x,
+                        ./images/mob-prod3@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/mob-prod3.jpg"
+                      alt="Ресторан &#8220;Сіафуд&#8221;"
+                      width="100%"
+                    />
+                  </picture>
                   <p class="product__description no-style">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -192,16 +261,40 @@
             <li class="product__item">
               <a href="" class="product__link link">
                 <div class="product__wrap">
-                  <img
-                    srcset="
-                      ./images/product4.jpg    1x,
-                      ./images/product4@2x.jpg 2x
-                    "
-                    src="./images/product4.jpg"
-                    alt="ППроєкт Прайм"
-                    width="450"
-                    height="294"
-                  />
+                  
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-prod4.jpg    1x,
+                        ./images/desk-prod4@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-prod4.jpg 1x,
+                        ./images/tab-prod4@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-prod4.jpg 1x,
+                        ./images/mob-prod4@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/mob-prod4.jpg"
+                      alt="Проєкт Прайм"
+                      width="100%"
+                    />
+                  </picture>
+                
                   <p class="product__description no-style">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -220,16 +313,39 @@
             <li class="product__item">
               <a href="" class="product__link link">
                 <div class="product__wrap">
-                  <img
-                    srcset="
-                      ./images/product5.jpg    1x,
-                      ./images/product5@2x.jpg 2x
-                    "
-                    src="./images/product5.jpg"
-                    alt="Проєкт Бокси"
-                    width="450"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desk-prod5.jpg    1x,
+                        ./images/desk-prod5@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-prod5.jpg 1x,
+                        ./images/tab-prod5@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-prod5.jpg 1x,
+                        ./images/mob-prod5@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/mob-prod5.jpg"
+                      alt="Проєкт Бокси"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="product__description no-style">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -248,16 +364,39 @@
             <li class="product__item">
               <a href="" class="product__link link">
                 <div class="product__wrap">
-                  <img
-                    srcset="
-                      ./images/product6.jpg    1x,
-                      ./images/product6@2x.jpg 2x
-                    "
-                    src="./images/product6.jpg"
-                    alt="Веб-сайт 	&#8220;Натхнення без меж&#8221;"
-                    width="450"
-                    height="294"
-                  />
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/desk-prod6.jpg    1x,
+                        ./images/desk-prod6@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-prod6.jpg 1x,
+                        ./images/tab-prod6@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-prod6.jpg 1x,
+                        ./images/mob-prod6@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/mob-prod6.jpg"
+                      alt="Веб-сайт 	&#8220;Натхнення без меж&#8221;"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="product__description no-style">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -276,16 +415,39 @@
             <li class="product__item">
               <a href="" class="product__link link">
                 <div class="product__wrap">
-                  <img
-                    srcset="
-                      ./images/product7.jpg    1x,
-                      ./images/product7@2x.jpg 2x
-                    "
-                    src="./images/product7.jpg"
-                    alt="Лімітоване видання"
-                    width="450"
-                    height="294"
-                  />
+                    <picture>
+                    <source
+                      srcset="
+                        ./images/desk-prod7.jpg    1x,
+                        ./images/desk-prod7@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-prod7.jpg 1x,
+                        ./images/tab-prod7@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-prod7.jpg 1x,
+                        ./images/mob-prod7@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/mob-prod7.jpg"
+                      alt="Лімітоване видання"
+                      width="100%"
+                    />
+                  </picture>
+
                   <p class="product__description no-style">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -304,16 +466,38 @@
             <li class="product__item">
               <a href="" class="product__link link">
                 <div class="product__wrap">
-                  <img
-                    srcset="
-                      ./images/product8.jpg    1x,
-                      ./images/product8@2x.jpg 2x
-                    "
-                    src="./images/product8.jpg"
-                    alt="Проєкт ЛАБ"
-                    width="450"
-                    height="294"
-                  />
+                   <picture>
+                    <source
+                      srcset="
+                        ./images/desk-prod8.jpg    1x,
+                        ./images/desk-prod8@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-prod8.jpg 1x,
+                        ./images/tab-prod8@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-prod8.jpg 1x,
+                        ./images/mob-prod8@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/mob-prod8.jpg"
+                      alt="Проєкт ЛАБ"
+                      width="100%"
+                    />
+                  </picture>
                   <p class="product__description no-style">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -332,16 +516,38 @@
             <li class="product__item">
               <a href="" class="product__link link">
                 <div class="product__wrap">
-                  <img
-                    srcset="
-                      ./images/product9.jpg    1x,
-                      ./images/product9@2x.jpg 2x
-                    "
-                    src="./images/product9.jpg"
-                    alt="Додаток &#8220;Гроувін Бізнес&#8221;"
-                    width="450"
-                    height="294"
-                  />
+                    <picture>
+                    <source
+                      srcset="
+                        ./images/desk-prod9.jpg    1x,
+                        ./images/desk-prod9@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                      sizes="370px"
+                    />
+                    <source
+                      srcset="
+                        ./images/tab-prod9.jpg 1x,
+                        ./images/tab-prod9@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                      sizes="354px"
+                    />
+                    <source
+                      srcset="
+                        ./images/mob-prod9.jpg 1x,
+                        ./images/mob-prod9@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                      sizes="100vw"
+                    />
+                    <img
+                      class="portfolio-image"
+                      src="./images/mob-prod9.jpg"
+                      alt="Додаток &#8220;Гроувін Бізнес&#8221;"
+                      width="100%"
+                    />
+                  </picture>
                   <p class="product__description no-style">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
