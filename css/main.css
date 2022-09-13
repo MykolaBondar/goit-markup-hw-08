@@ -1854,7 +1854,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .product__item {
-    height: 404px;
     -ms-flex-preferred-size: calc((100% - 90px) / 3);
         flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
